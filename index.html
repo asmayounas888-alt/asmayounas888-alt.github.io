@@ -1,54 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of asmayounas888-alt showcasing projects, skills and contact info.">
-    <meta name="keywords" content="portfolio, projects, skills, contact, asmayounas888-alt">
-    <meta name="author" content="asmayounas888-alt">
-    <title>asmayounas888-alt's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern portfolio of asmayounas888-alt showcasing projects, skills and contact info." />
+    <meta name="keywords" content="portfolio, projects, skills, contact, github, developer, asmayounas888-alt" />
+    <meta name="author" content="asmayounas888-alt" />
+    <title>asmayounas888-alt | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Top navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">asmayounas<span>.dev</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am asmayounas888-alt, a passionate web developer with experience in creating beautiful and functional websites.</p>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow">Hi, I’m</p>
+                <h1 class="hero-title">AsmA Younas</h1>
+                <p class="hero-subtitle">Web Developer • Problem Solver • Tech Enthusiast</p>
+                <p class="hero-description">
+                    I build clean, responsive, and user‑friendly websites and web apps.
+                    I love turning ideas into real products using modern web technologies.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="https://github.com/asmayounas888-alt" target="_blank" rel="noopener">
+                        View GitHub Profile
+                    </a>
+                    <a class="btn secondary" href="#projects">See My Work</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:asmayounas888-alt@example.com" aria-label="Email">Email</a>
+                    <span>•</span>
+                    <a href="https://github.com/asmayounas888-alt" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="profile-circle">
+                    <span class="initials">AY</span>
+                </div>
+                <div class="hero-card-body">
+                    <p class="hero-card-title">Available for opportunities</p>
+                    <p class="hero-card-text">
+                        Open to internships, freelance projects, and collaborations.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
     </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li>Project 1: <a href="#">Link to Project 1</a></li>
-            <li>Project 2: <a href="#">Link to Project 2</a></li>
-            <li>Project 3: <a href="#">Link to Project 3</a></li>
-        </ul>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">
+                A quick overview of who I am and what I do.
+            </p>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        I am <strong>AsmA Younas</strong>, a web developer focused on building
+                        beautiful and functional websites. I enjoy working on both the front‑end and back‑end,
+                        and I’m always learning new tools and best practices.
+                    </p>
+                    <p>
+                        My goal is to write clean, maintainable code and create experiences that feel fast,
+                        intuitive, and accessible to everyone.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years of Coding</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">
+                A few things I’ve been working on recently.
+            </p>
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-tag">Web App</div>
+                    <h3 class="card-title">Project 1</h3>
+                    <p class="card-text">
+                        A responsive website with modern UI and animations.
+                    </p>
+                    <div class="card-footer">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <a class="card-link" href="#" target="_blank" rel="noopener">View</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-tag">Portfolio</div>
+                    <h3 class="card-title">Project 2</h3>
+                    <p class="card-text">
+                        Personal portfolio template focused on clean design.
+                    </p>
+                    <div class="card-footer">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">Tailwind</span>
+                        <a class="card-link" href="#" target="_blank" rel="noopener">View</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-tag">Mini Project</div>
+                    <h3 class="card-title">Project 3</h3>
+                    <p class="card-text">
+                        A small app to practice JavaScript logic and DOM manipulation.
+                    </p>
+                    <div class="card-footer">
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">API</span>
+                        <a class="card-link" href="#" target="_blank" rel="noopener">View</a>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: asmayounas888-alt@example.com</p>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">
+                Technologies and tools I use regularly.
+            </p>
+            <div class="skills-grid">
+                <div class="skills-column">
+                    <h3>Frontend</h3>
+                    <ul class="skills-list">
+                        <li>HTML5 / Semantic Markup</li>
+                        <li>CSS3, Flexbox &amp; Grid</li>
+                        <li>Responsive Design</li>
+                        <li>JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+                <div class="skills-column">
+                    <h3>Backend &amp; Tools</h3>
+                    <ul class="skills-list">
+                        <li>Node.js (basics)</li>
+                        <li>Git &amp; GitHub</li>
+                        <li>REST APIs (basics)</li>
+                        <li>VS Code / Cursor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2026 asmayounas888-alt. All rights reserved.</p>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">
+                Interested in working together or have a question? Reach out.
+            </p>
+            <div class="contact-card">
+                <p>Email me at</p>
+                <a class="contact-email" href="mailto:asmayounas888-alt@example.com">
+                    asmayounas888-alt@example.com
+                </a>
+                <p>or visit my GitHub profile:</p>
+                <a class="contact-github" href="https://github.com/asmayounas888-alt" target="_blank" rel="noopener">
+                    github.com/asmayounas888-alt
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 asmayounas888-alt. Built with HTML &amp; CSS.</p>
+            <a href="#hero" class="back-to-top">Back to top ↑</a>
+        </div>
     </footer>
 </body>
 </html>
