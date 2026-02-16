@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://asmayounas888-alt.github.io/sitemap.xml
